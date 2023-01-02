@@ -1,0 +1,1322 @@
+// @import "../styles/common.scss";
+@import '../styles/variables';
+
+$red-common: #d1132a;
+$green-common: #2cac87;
+$green-light-common: #c1c625;
+$green-alt-common: #9ec232;
+$gold-common: #eba75c;
+$charcoal-common: #3a3f42;
+$charcoal-alt: #43484d;
+$orange-common: #e4590f;
+$yellow-common: #ffcd0f;
+$yellow-light-common: #eacb16;
+
+// phần menu site
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark {
+    li.ant-menu-item.ant-menu-item-selected {
+        background-color: #fdd901 !important;
+        color: black !important;
+
+        .ant-menu-title-content {
+            color: black !important;
+        }
+
+        svg {
+            color: black !important;
+        }
+    }
+}
+
+.title_text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav_bar .ant-menu-title-content {
+    font-size: 16px;
+}
+// phần HeaderTag
+.header-container {
+    display: flex;
+    height: 55px !important;
+    // sticky
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    display: flex;
+    justify-content: space-between;
+
+    .left-header {
+        display: flex;
+        justify-content: flex-start;
+
+        .logoPN {
+            display: block;
+            margin-top: -8px !important;
+        }
+
+        #logoshort {
+            display: none;
+        }
+
+        .collapsed-button {
+            padding: 5px 5px 0px 40px;
+            margin-top: -10px !important;
+        }
+
+        .header-breadcrumb {
+            li {
+                color: white;
+
+                span {
+                    color: white;
+                }
+            }
+
+            .ant-breadcrumb-separator {
+                color: white;
+            }
+
+            margin: auto 40px !important;
+        }
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: flex-end;
+        height: 30px !important;
+        line-height: 0px !important;
+
+        margin-top: 12px !important;
+
+        .custom-dropdown-menu {
+            margin-right: 50px !important;
+        }
+
+        .user-name {
+            color: white;
+            line-height: 30px !important;
+            padding: 0 15px !important;
+        }
+
+        // logout
+        .btn-logout {
+            color: black;
+            height: 30px !important;
+            line-height: 0px !important;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:hover {
+                background-color: darken(#fdd901, 5);
+            }
+
+            i {
+                font-size: $base-size + 1px;
+            }
+        }
+
+        .languages {
+            line-height: 30px;
+            text-align: center;
+
+            .languages-en {
+                margin-right: 15px;
+                margin-left: 15px;
+                cursor: pointer;
+                opacity: 0.8;
+                color: black;
+
+                &.active {
+                    opacity: 1;
+                    color: orange;
+                }
+            }
+
+            .languages-vi {
+                cursor: pointer;
+                opacity: 0.8;
+                color: black;
+                line-height: 30px;
+
+                &.active {
+                    opacity: 1;
+                    color: orange;
+                }
+            }
+        }
+    }
+}
+
+.header-container1 {
+    display: flex;
+    height: 45px !important;
+    // sticky
+    position: sticky;
+    width: 100%;
+    left: 0;
+    top: 30;
+    right: 0;
+    z-index: 2;
+    background-color: #f0f2f5;
+    justify-content: space-between;
+    padding-left: 0;
+
+    .left-header {
+        display: flex;
+        justify-content: flex-start;
+
+        .logoPN {
+            margin-top: -8px !important;
+        }
+
+        .header-breadcrumb {
+            li {
+                color: black;
+
+                span {
+                    color: black;
+                }
+            }
+
+            .ant-breadcrumb-separator {
+                color: black;
+            }
+
+            margin: auto 40px !important;
+        }
+    }
+}
+
+.tab-container {
+    width: 100%;
+}
+
+// Phần login
+.login_body {
+    background-image: url('../assets/images/home/login_background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    position: relative;
+}
+
+.frm-login {
+    // height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.login-form {
+    max-width: 300px;
+    // border: 1px solid black;
+}
+
+.login-form-forgot {
+    float: right;
+    margin-left: 20px;
+}
+
+.login-form-button {
+    width: 384px;
+    background-color: #f6db3e;
+    border-color: #f6db3e;
+    color: black;
+    font-weight: bold;
+    height: 46px;
+    border-radius: 5px;
+    margin-left: -7px;
+    margin-bottom: 50px;
+}
+
+// .signin-button {
+//     height: 46px;
+// }
+// .signin-button :hover {
+//     background-color: #f3d218;
+//     border-color: #f3d218;
+//     color: black;
+// }
+
+.ant-btn-primary:hover {
+    color: black;
+    border-color: #f3d218;
+    background: #f3d218;
+}
+
+.signin-header {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: -55px;
+    padding: 16px;
+    height: 168px;
+    margin-bottom: 8px;
+    text-align: center;
+    opacity: 1;
+    background-color: #f6db3e;
+    border-radius: 5px;
+}
+
+.signin-box {
+    width: 466px;
+    height: 605px;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+.signin-method {
+    font-size: 20px;
+    gap: 65px !important;
+}
+
+.signin-input {
+    width: 384px;
+    margin-left: -7px;
+    margin-bottom: 32px;
+}
+
+.signin-setheight {
+    height: 45px;
+    border-radius: 5px;
+}
+
+.signin-signup {
+    text-align: center;
+    width: 384px;
+}
+
+.btn-pay {
+    padding-bottom: 1px;
+}
+
+// end login css
+
+// // signup css
+// .signup_sider {
+//     background-image: url('../assets/images/home/signup.jpg');
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     width: 100%;
+//     height: 100%;
+// }
+// .signup_bg {
+//     width: 100%;
+//     z-index: 0;
+// }
+
+// .signup_title {
+//     text-align: center;
+//     margin-top: 20px;
+// }
+
+// // .row_input {
+// //     margin-left: 30px;
+// // }
+
+// .signup_button {
+//     width: 100%;
+//     font-weight: bold !important;
+// }
+
+// .signup_footer {
+//     display: flex;
+//     justify-content: center;
+// }
+
+// .ant-btn-primary {
+//     color: black !important;
+//     border-color: rgb(253, 224, 54) !important;
+//     background: rgb(253, 224, 54) !important;
+// }
+
+// at user manage
+// Source mixin
+@mixin make-container($padding-x: 100px) {
+    padding-top: 50px;
+    width: 95%;
+    // padding-right: $padding-x;
+    // padding-left: $padding-x;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// Usage
+.custom-container {
+    @include make-container();
+}
+
+.custom-background {
+    // height: calc(100vh);
+    background-color: #f0f2f5;
+    // min-height: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+.custom-footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+// link at https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b
+// solution 3: position:absolute (no dynamic footer height)
+
+//end at user manage
+
+.required {
+    color: red;
+}
+
+.ant-radio-button-wrapper {
+    margin-right: 15px;
+}
+// Address book
+.button-right {
+    display: flex !important;
+    justify-content: flex-end;
+    margin-right: -10px;
+}
+
+.blue-btn {
+    border-color: #25e6a2 !important;
+    background: #25e6a2 !important;
+    color: black;
+}
+
+.blue-btn:hover {
+    border-color: #15aa76 !important;
+    background: #15aa76 !important;
+    color: black;
+}
+
+.ant-radio-button-checked:hover {
+    border-color: #f3d218 !important ;
+    background: #f3d218 !important ;
+    color: black;
+}
+
+.ant-radio-button-wrapper:hover {
+    border-color: #f3d218 !important ;
+    background: #f3d218 !important ;
+    color: black;
+}
+
+.btn-refresh {
+    border: 1px solid #7f7f7f;
+}
+
+.address_card {
+    height: calc(100vh - 100px);
+}
+
+// Address book modal
+p {
+    margin-bottom: 0;
+}
+
+.col-margin-bottom {
+    margin-bottom: 10px;
+}
+
+.row-address {
+    p {
+        margin-bottom: 5px;
+
+        span {
+            color: red;
+        }
+    }
+}
+
+.col-top {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.address-note {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: #feffb9;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: flex-start;
+        height: 100%;
+        align-items: center;
+    }
+}
+
+.ant-switch-handle {
+    height: 18px !important;
+}
+
+.ant-switch-checked {
+    background: #ff8a00;
+}
+
+.icon-custom {
+    color: #ff8a00;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.btn-switch {
+    margin-right: 15px;
+}
+
+// Page Orders
+.order_header {
+    width: 100%;
+    // padding-top: 10px;
+}
+
+.ant-table-thead .ant-table-cell {
+    background-color: #fdf4d7;
+}
+
+.ant-card-bordered {
+    border: 1px solid #b6b4b4;
+}
+
+.card_border {
+    border-radius: 6px;
+}
+
+.box_time {
+    height: 128px;
+}
+
+.range_picker {
+    width: 100%;
+}
+
+.ant-radio-button-wrapper > .ant-radio-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.ant-layout,
+.ant-layout * {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+.ant-radio-group-solid
+    .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+    color: #000000;
+    background: #fde036;
+    border-color: #fde036;
+}
+.space_button {
+    height: 100%;
+    width: 100%;
+}
+// Page Trackings
+.fix-scroll-bar {
+    min-height: calc(100vh - 50px);
+}
+.fa_text {
+    margin-left: 15px;
+    font-size: 15px;
+    margin-right: 6px;
+}
+
+.fa_card {
+    border-radius: 10px !important;
+}
+
+.tracking_item {
+    height: 195px;
+    border-radius: 7px !important;
+}
+
+.gg-arrow-long-right {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    box-shadow: inset 0 0 0 2px;
+    width: 24px;
+    height: 6px;
+}
+.gg-arrow-long-right::after {
+    content: '';
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    right: 0;
+}
+.card_right {
+    margin-right: 10px;
+}
+
+.item_title {
+    display: flex;
+    justify-content: start;
+
+    p:first-child {
+        font-weight: bold;
+        font-size: 23px;
+        margin-right: 40px;
+        margin-bottom: 0;
+    }
+    p:last-child {
+        margin-bottom: 0;
+        background-color: #01b6ce;
+        color: white;
+        border-radius: 18px;
+        padding: 4px 10px;
+        font-weight: 450;
+        height: 32px;
+    }
+}
+
+.item_payment {
+    display: flex;
+    justify-content: start;
+    margin: 5px 0;
+    p {
+        margin-left: 8px;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+}
+
+.item_location {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    div p:first-child {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    div p:last-child {
+        font-size: 15px;
+    }
+    p {
+        margin-bottom: 0;
+    }
+}
+
+.item_progress {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+$progress-color: #32c5b0;
+
+.item_container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+.progress-segment {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.item {
+    width: 90%;
+    background-color: lightgray;
+    margin-right: 2px;
+    height: 8px;
+
+    &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    &.progress-color {
+        background: $progress-color !important;
+    }
+}
+
+.icon_tracking {
+    width: 24px;
+    height: 24px;
+}
+
+.fa_number {
+    font-weight: bold;
+    font-size: 15px;
+}
+// Tracking Detail
+.detail_name {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+    p:first-child {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0px;
+    }
+    p:last-child {
+        background-color: #159600;
+        color: white;
+        margin-bottom: 0px;
+        padding: 0px 10px;
+        padding-top: 2px;
+    }
+    span {
+        color: #e89b06;
+    }
+}
+
+.detail_progress {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail_head {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdd800;
+    margin-top: 40px;
+    div {
+        margin-top: 10px;
+        margin-right: 20px;
+        p:first-child {
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+        p:last-child {
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+.img_responsive {
+    width: 100%;
+    height: 100%;
+}
+
+.tracking_active {
+    color: orange;
+}
+
+.detail_route {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf4d7;
+    align-items: center;
+    height: 56px;
+    padding: 0 15px;
+    p {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 0;
+        width: 100px;
+    }
+}
+
+// .detail_check {
+//     margin-top: 13px;
+// }
+
+.tracking_not_done::after {
+    content: '';
+    border-right: 1px solid #c1c1c1;
+    margin-left: 6px;
+    display: inline-block;
+    height: calc(100% - 22px);
+}
+
+.tracking_done::after {
+    content: '';
+    border-right: 1px solid orange;
+    margin-left: 6px;
+    display: inline-block;
+    height: calc(100% - 22px);
+}
+
+.detail_bar {
+    border-right: 1px solid black;
+}
+.sender_title {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.container_detail_log {
+    // log hành trình & Xe số 1
+    .detail_log {
+        display: flex;
+        justify-content: start;
+    }
+
+    // button thêm log
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 15px;
+
+    align-items: center;
+    height: 56px;
+    p {
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+}
+
+.finish {
+    margin-left: 5px;
+}
+
+.fa_icon1 {
+    margin-right: 5px;
+}
+
+.gap_top {
+    margin-top: 10px;
+}
+
+// Page list order
+.choose-range-time-small-custom {
+    .ant-radio-button-wrapper {
+        border-radius: 10px !important;
+        margin-right: 13px;
+    }
+
+    .ant-radio-button-wrapper:last-child {
+        border-radius: 10px !important;
+        margin-right: 0;
+    }
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+        border-radius: 10px !important;
+        width: 0 !important;
+    }
+}
+
+// Page Order Detail
+.right-align {
+    position: absolute;
+    right: 60px;
+}
+
+.not_margin_bottom {
+    margin-bottom: 0 !important;
+}
+
+.button_text {
+    font-weight: 500;
+}
+
+.right_desc .ant-card-body {
+    padding-bottom: 0;
+}
+
+.left_desc .ant-card-body {
+    padding-bottom: 11px;
+}
+.not_padding_bottom {
+    padding-bottom: 0;
+}
+// Page Invoices
+// .button-right {
+//     display: flex !important;
+//     justify-content: flex-end;
+// }
+.choose-range-time-middle-custom {
+    .ant-radio-button-wrapper {
+        border-radius: 15px !important;
+    }
+
+    .ant-radio-button-wrapper:last-child {
+        border-radius: 15px !important;
+    }
+
+    .ant-radio-button-wrapper:not(:first-child)::before {
+        border-radius: 15px !important;
+        width: 0 !important;
+    }
+}
+
+.site-layout-background {
+    height: calc(100vh - 50px);
+}
+
+// .main-container {
+//     height: calc(100vh);
+// }
+
+// Page New Order Multi
+.uploading-col-card {
+    display: flex !important;
+}
+// .ant-col.ant-col-12.uploading-col-card {
+//     display: flex !important;
+// }
+
+// Page Setting
+.layout_background {
+    background-color: #f0f2f5;
+    height: calc(100vh - 50px);
+}
+
+.nav_custom {
+    margin-right: 44px;
+
+    ul li {
+        height: 50px !important;
+        font-size: 20px;
+    }
+}
+
+.gutter-row {
+    padding: 10px 5px;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.save-button {
+    margin-right: 10px;
+}
+
+.select-box {
+    width: 100%;
+}
+
+.align_right {
+    float: right;
+    height: 40px;
+    width: 100px;
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.footer-note {
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+.form_setting .ant-form-large .ant-form-item-label > label {
+    font-size: 15px;
+}
+
+.form_setting span.ant-radio + * {
+    font-size: 16px;
+}
+// Page Confident Score
+
+.score_top {
+    p {
+        margin-bottom: 0px;
+        font-size: 86px;
+        // color: linear-gradient(180deg, #fc4a1a 0%, #f7b733 100%);
+        background: -webkit-linear-gradient(#fc4a1a, #f7b733);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+}
+
+.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+.progress-segment {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.item {
+    width: 90%;
+    background-color: lightgray;
+    margin-right: 2px;
+    height: 8px;
+
+    &:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    &:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    &.red-common {
+        background: $red-common !important;
+    }
+
+    &.gold-common {
+        background: $gold-common !important;
+    }
+
+    &.orange-common {
+        background: $orange-common !important;
+    }
+
+    &.yellow-common {
+        background: $yellow-common !important;
+        height: 12px;
+        margin-top: -2px;
+        p {
+            text-align: center;
+            margin-top: 20px;
+            color: $yellow-common !important;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+    }
+
+    &.green-common {
+        background: $green-alt-common !important;
+    }
+}
+
+.progress-segment div {
+    border-radius: 4px;
+}
+
+.score_text {
+    margin-top: 55px;
+    p:first-child {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    p:last-child {
+        font-size: 15px;
+    }
+}
+
+.arrow_up {
+    color: #009733 !important;
+    font-size: 18px;
+    stroke-width: 50;
+    stroke: #009733;
+}
+
+.arrow_down {
+    color: #c20000 !important;
+    font-size: 18px;
+    stroke-width: 50;
+    stroke: #c20000;
+}
+
+.score_plus {
+    color: #009733 !important;
+    font-size: 15px;
+    margin-right: 8px;
+    stroke-width: 50;
+    stroke: #009733;
+}
+
+.score_minus {
+    color: #c20000 !important;
+    font-size: 15px;
+    stroke-width: 50;
+    stroke: #c20000;
+    margin-right: 8px;
+}
+
+// Page Payment
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.payment_name {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.payment_arrow {
+    display: flex;
+    align-items: center;
+}
+
+.bg_color {
+    background-color: #f6f6f6;
+}
+
+// Page Payment Detail
+.card_height {
+    height: 600px;
+}
+
+.payment_text {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+
+    p {
+        flex: 0 0 calc(100% - 100px);
+        max-width: calc(100% - 100px);
+        margin-left: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+.image_box {
+    height: 80px;
+    max-width: 80px;
+    display: flex;
+    flex: 0 0 80px;
+    align-items: center;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.payment_scroll {
+    height: 250px;
+    overflow: auto;
+}
+
+.payment_button {
+    margin-top: 20px;
+    height: 50px !important;
+}
+
+.row_bg {
+    margin-top: 10px;
+    background-color: #cccccc;
+}
+
+.payment_add {
+    width: 155px;
+    white-space: normal !important;
+    word-wrap: break-word;
+    p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+}
+
+// Page Dashboard
+.layout_background1 {
+    background-color: #f0f2f5;
+    height: calc(100vh - 50px);
+}
+
+// để phủ màu cho toàn bộ chiều cao của tất cả trang
+//https://stackoverflow.com/questions/7357818/how-can-an-html-element-fill-out-100-of-the-remaining-screen-height-using-css
+// đặc biệt khi dùng responsive
+html {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.dashboard_right {
+    background-color: #fdf4d7;
+    height: 188px;
+    border-radius: 5px;
+}
+
+.box_title {
+    font-size: 20px;
+    font-weight: 480;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.box_image {
+    width: 55px;
+    height: 55px;
+}
+
+.box_money {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.box_statistic {
+    p:first-child {
+        font-size: 17px;
+        font-weight: 550;
+        margin-top: -15px;
+        text-align: center;
+    }
+    p:last-child {
+        font-size: 30px;
+        font-weight: 750;
+        text-align: center;
+        // margin-top: 10px;
+    }
+}
+.paid_order {
+    color: #159600;
+}
+
+.unpaid_order {
+    color: #130076e0;
+}
+
+.out_date_order {
+    color: red;
+}
+
+.red_border {
+    border: 2px solid red;
+}
+// =========================ADMIN PAGE =========================
+/* === CODFE HEADING STYLE #2 === */
+.cf-title-02 h3 {
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px;
+}
+.cf-title-02 h3:before {
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    height: 3px;
+    content: '';
+    background-color: #1890ff;
+    // center
+    // left: -200px;
+    // right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cf-title-02 h3 span {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+}
+.cf-title-alt-two h3 {
+    text-align: left;
+}
+.cf-title-alt-two h3:before {
+    // left: 50%;
+    margin-left: 0;
+}
+
+//========================= END ADMIN PAGE =========================
+
+//  RESPONSIVE
+
+@media screen and (max-width: 730px) {
+    .logoPN {
+        display: none !important;
+    }
+
+    #logoshort {
+        display: block !important;
+    }
+
+    .collapsed-button {
+        padding-left: 10px !important;
+        padding-bottom: 5px !important;
+    }
+
+    #main {
+        width: 0px;
+        max-width: 0;
+        min-width: 0;
+    }
+
+    #setting_menu {
+        width: 0px;
+        max-width: 0;
+        min-width: 0;
+    }
+
+    #mySidebar {
+        width: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header-breadcrumb {
+        display: none;
+    }
+
+    #main {
+        width: 0px;
+        max-width: 0;
+        min-width: 0;
+    }
+
+    #setting_menu {
+        width: 0px;
+        max-width: 0;
+        min-width: 0;
+    }
+
+    #mySidebar {
+        width: 0px;
+    }
+}
+
+.right-arrow {
+    // position: absolute;
+
+    p {
+        // position: relative;
+        // bottom: 15px;
+        // left: 265px;
+        font-size: 35px !important;
+    }
+}
+
+.a-first-breadcumb {
+    color: white !important;
+}

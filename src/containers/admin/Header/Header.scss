@@ -1,0 +1,106 @@
+@import '../../../styles/common.scss';
+
+.header-admin-container {
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    background-color: $colormain;
+    color: $common-text-color;
+    height: 50px;
+    // position: relative;
+    width: 100%;
+    position: fixed;
+    .btn-logout-header {
+        color: $common-text-color;
+        line-height: 50px;
+        height: 50px;
+        padding: 0 10px;
+        &:hover {
+            background-color: darken($colormain, 5);
+        }
+        i {
+            font-size: $base-size + 1px;
+        }
+    }
+
+    .left-header {
+        display: flex;
+        justify-content: flex-start;
+
+        .logoPN {
+            margin-top: -8px !important;
+        }
+
+        .header-breadcrumb {
+            li {
+                color: white;
+
+                span {
+                    color: white;
+                }
+            }
+
+            .ant-breadcrumb-separator {
+                color: white;
+            }
+
+            margin: auto 40px !important;
+        }
+    }
+
+    .right-header {
+        display: flex;
+        justify-content: flex-end;
+
+        .user-name {
+            color: white;
+            line-height: 50px;
+            padding: 0 15px;
+        }
+
+        // logout
+        .btn-logout {
+            color: white;
+            line-height: 50px;
+            height: 50px;
+            padding: 0 10px;
+
+            &:hover {
+                background-color: darken(#fdd901, 5);
+            }
+
+            i {
+                font-size: $base-size + 1px;
+            }
+        }
+
+        .languages {
+            line-height: 50px;
+
+            .languages-en {
+                margin-right: 15px;
+                margin-left: 15px;
+                cursor: pointer;
+                opacity: 0.8;
+                color: white;
+
+                &.active {
+                    opacity: 1;
+                    color: orange;
+                }
+            }
+
+            .languages-vi {
+                cursor: pointer;
+                opacity: 0.8;
+                color: white;
+                line-height: 50px;
+
+                &.active {
+                    opacity: 1;
+                    color: orange;
+                }
+            }
+        }
+    }
+}
